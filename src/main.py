@@ -1,112 +1,107 @@
-from collections import Counter
 from time import sleep
 
 from fapema.parser import parsear_edital
 from fapema.scraper import listar_editais
 from fapema.validator import validar_editais
+from storage.repository import (
+    atualizar_estado,
+    carregar_estado,
+    salvar_estado,
+)
 
 
-def main():
-    print("Validando parser em todos os editais e oportunidades...\n")
+TIPOS_MONITORADOS = (
+    "edital",
+    "oportunidade",
+)
 
-    itens = validar_editais(listar_editais())
+
+def coletar_editais() -> list[dict]:
+    """Coleta e processa os editais monitorados."""
+    itens = validar_editais(
+        listar_editais()
+    )
 
     candidatos = [
         item
         for item in itens
-        if item["tipo"] in ("edital", "oportunidade")
+        if item["tipo"] in TIPOS_MONITORADOS
     ]
 
-    resultados = []
-    erros = []
+    editais = []
 
-    for numero, item in enumerate(candidatos, start=1):
+    for numero, item in enumerate(
+        candidatos,
+        start=1,
+    ):
         print(
             f"[{numero}/{len(candidatos)}] "
             f"{item['titulo']}"
         )
 
         try:
-            edital = parsear_edital(item["url"])
-            edital["tipo"] = item["tipo"]
-
-            resultados.append(edital)
-
-        except Exception as erro:
-            erros.append(
-                {
-                    "titulo": item["titulo"],
-                    "url": item["url"],
-                    "erro": str(erro),
-                }
+            edital = parsear_edital(
+                item["url"]
             )
 
-        # Pequena pausa para não fazer várias requisições
-        # consecutivas ao site da FAPEMA.
+            edital["tipo"] = item["tipo"]
+
+            editais.append(edital)
+
+        except Exception as erro:
+            print(
+                f"Erro ao processar "
+                f"{item['url']}: {erro}"
+            )
+
         sleep(0.5)
+
+    return editais
+
+
+def main():
+    print(
+        "Iniciando monitoramento "
+        "de editais da FAPEMA...\n"
+    )
+
+    estado = carregar_estado()
+
+    editais_atuais = coletar_editais()
+
+    novo_estado, novos = atualizar_estado(
+        estado,
+        editais_atuais,
+    )
+
+    salvar_estado(novo_estado)
 
     print("\n" + "=" * 70)
     print("RESUMO\n")
 
-    status = Counter(
-        edital["status"]
-        for edital in resultados
+    print(
+        f"Processados: "
+        f"{len(editais_atuais)}"
     )
 
-    print(f"Candidatos:    {len(candidatos)}")
-    print(f"Processados:   {len(resultados)}")
-    print(f"Abertos:       {status['aberto']}")
-    print(f"Encerrados:    {status['encerrado']}")
-    print(f"Indeterminados:{status['indeterminado']}")
-    print(f"Erros:         {len(erros)}")
+    print(
+        f"Registrados no banco: "
+        f"{len(novo_estado['editais'])}"
+    )
 
-    print("\n" + "=" * 70)
-    print("INDETERMINADOS\n")
+    print(
+        f"Novos detectados: "
+        f"{len(novos)}"
+    )
 
-    indeterminados = [
-        edital
-        for edital in resultados
-        if edital["status"] == "indeterminado"
-    ]
+    if novos:
+        print("\nNOVOS ITENS\n")
 
-    if not indeterminados:
-        print("Nenhum.")
-    else:
-        for edital in indeterminados:
-            print(edital["titulo"])
-            print(edital["url"])
-            print()
-
-    print("=" * 70)
-    print("ERROS\n")
-
-    if not erros:
-        print("Nenhum.")
-    else:
-        for erro in erros:
-            print(erro["titulo"])
-            print(erro["url"])
-            print(f"Erro: {erro['erro']}")
-            print()
-
-    print("=" * 70)
-    print("EDITAIS CONSIDERADOS ABERTOS\n")
-
-    abertos = [
-        edital
-        for edital in resultados
-        if edital["status"] == "aberto"
-    ]
-
-    if not abertos:
-        print("Nenhum.")
-    else:
-        for edital in abertos:
-            print(edital["titulo"])
-            print(f"Prazo: {edital['prazo_final']}")
-            print(f"Hora:  {edital['prazo_hora']}")
-            print(edital["url"])
-            print()
+        for edital in novos:
+            print(
+                f"- {edital['titulo']} "
+                f"[{edital['status']}]"
+            )
 
 
 if __name__ == "__main__":
