@@ -25,6 +25,7 @@ def carregar_estado() -> dict:
     """
     estado_vazio = {
         "ultima_execucao_em": None,
+        "telegram_inicializado": False,
         "editais": [],
     }
 
@@ -115,8 +116,12 @@ def atualizar_estado(
     )
 
     novo_estado = {
-        "ultima_execucao_em": momento,
-        "editais": editais,
+    "ultima_execucao_em": momento,
+    "telegram_inicializado": estado.get(
+        "telegram_inicializado",
+        False,
+    ),
+    "editais": editais,
     }
 
     return novo_estado, novos

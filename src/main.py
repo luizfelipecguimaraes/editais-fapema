@@ -9,6 +9,13 @@ from storage.repository import (
     salvar_estado,
 )
 
+from notifications.service import (
+    formatar_mensagem,
+    marcar_como_notificado,
+    preparar_notificacoes,
+)
+from notifications.telegram import enviar_mensagem
+
 
 TIPOS_MONITORADOS = (
     "edital",
@@ -74,6 +81,13 @@ def main():
         editais_atuais,
     )
 
+    notificacoes = preparar_notificacoes(
+        novo_estado,
+        novos,
+    )
+
+    # Salva antes de enviar para registrar
+    # as notificações pendentes.
     salvar_estado(novo_estado)
 
     print("\n" + "=" * 70)
@@ -94,14 +108,70 @@ def main():
         f"{len(novos)}"
     )
 
-    if novos:
-        print("\nNOVOS ITENS\n")
+    print(
+        f"Notificações pendentes: "
+        f"{len(notificacoes)}"
+    )
 
-        for edital in novos:
-            print(
-                f"- {edital['titulo']} "
-                f"[{edital['status']}]"
+    print("\n" + "=" * 70)
+    print("TELEGRAM\n")
+
+    falhas = 0
+
+    for edital in notificacoes:
+        print(
+            f"Enviando: "
+            f"{edital['titulo']}"
+        )
+
+        try:
+            mensagem = formatar_mensagem(
+                edital
             )
+
+            enviar_mensagem(mensagem)
+
+            marcar_como_notificado(
+                edital
+            )
+
+            # Salvamos após cada envio.
+            # Se o programa cair depois,
+            # mensagens já enviadas não serão duplicadas.
+            salvar_estado(novo_estado)
+
+            print("Enviado com sucesso.\n")
+
+        except Exception as erro:
+            falhas += 1
+
+            print(
+                f"Falha ao enviar: {erro}\n"
+            )
+
+    if (
+        not novo_estado.get(
+            "telegram_inicializado",
+            False,
+        )
+        and falhas == 0
+    ):
+        novo_estado[
+            "telegram_inicializado"
+        ] = True
+
+    salvar_estado(novo_estado)
+
+    print("=" * 70)
+
+    print(
+        f"Notificações enviadas: "
+        f"{len(notificacoes) - falhas}"
+    )
+
+    print(
+        f"Falhas: {falhas}"
+    )
 
 
 if __name__ == "__main__":

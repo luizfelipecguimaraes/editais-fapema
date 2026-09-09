@@ -1,5 +1,6 @@
 {
-  "ultima_execucao_em": "2026-09-08T21:01:33-03:00",
+  "ultima_execucao_em": "2026-09-08T21:31:18-03:00",
+  "telegram_inicializado": true,
   "editais": [
     {
       "titulo": "Edital FAPEMA n° 22/2026",
@@ -10,7 +11,10 @@
       "status": "aberto",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": true,
+      "notificado_em": "2026-09-08T21:26:29-03:00",
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA/ESMAM n° 21/2026",
@@ -21,7 +25,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL nº 20/2026 FAPEMA/SECTI/CNPq/CAPES",
@@ -32,7 +39,10 @@
       "status": "aberto",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": true,
+      "notificado_em": "2026-09-08T21:26:31-03:00",
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA/UEMA nº 19/2026",
@@ -43,7 +53,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA Nº 18/2026",
@@ -54,7 +67,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA/EMAP nº 17/2026",
@@ -65,7 +81,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA/EMAP nº 16/2026",
@@ -76,7 +95,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA/SAF n° 15/2026",
@@ -87,7 +109,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "4º CONCURSO DE ARTIGOS CIENTÍFICOS EM HOMENAGEM AO DES. MILSON COUTINHO",
@@ -98,7 +123,10 @@
       "status": "aberto",
       "tipo": "oportunidade",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": true,
+      "notificado_em": "2026-09-08T21:26:32-03:00",
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA/FMRB n° 14/2026",
@@ -109,7 +137,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA nº 13/2026",
@@ -120,7 +151,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA nº 12/2026",
@@ -131,7 +165,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA nº 11/2026",
@@ -142,7 +179,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA nº 10/2026",
@@ -153,7 +193,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA/FINEP n° 09/2026",
@@ -164,7 +207,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital Fapema nº 07/2026",
@@ -175,7 +221,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA n° 06/2026 – PRÊMIO FAPEMA 2026",
@@ -186,7 +235,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA/EMAP/GRUPO MATEUS/SUZANO/TEGRAM/COPI- nº 05/2026",
@@ -197,7 +249,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA nº 04/2026 – PROAPI-MA",
@@ -208,7 +263,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA nº 03/2026 – DEEP TECH",
@@ -219,7 +277,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA nº 02/2026 – APEC",
@@ -230,7 +291,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA N° 01/2026 – AREC",
@@ -241,7 +305,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL Nº 01/2025 AGED/FAPEMA",
@@ -252,7 +319,10 @@
       "status": "indeterminado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital nº 20/2025 – ACERVOS",
@@ -263,7 +333,10 @@
       "status": "indeterminado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital nº 19/2025 – MARAinTech",
@@ -274,7 +347,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital nº 18/2025 – Centelha",
@@ -285,7 +361,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA/SAF N° 17/2025",
@@ -296,7 +375,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA/ESMAM N° 16/2025",
@@ -307,7 +389,10 @@
       "status": "indeterminado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA/UEMA nº 15/2025",
@@ -318,7 +403,10 @@
       "status": "indeterminado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA n° 14/2025 – PRÊMIO FAPEMA 2025",
@@ -329,7 +417,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA n° 13/2025",
@@ -340,7 +431,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA n° 12/2025",
@@ -351,7 +445,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA/SEBRAE Nº 11/2025",
@@ -362,7 +459,10 @@
       "status": "indeterminado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "3º CONCURSO DE ARTIGOS CIENTÍFICOS EM HOMENAGEM AO DES. MILSON COUTINHO",
@@ -373,7 +473,10 @@
       "status": "encerrado",
       "tipo": "oportunidade",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA/SETRES/UFMA/UEMA/UEMASUL no 10/2025",
@@ -384,7 +487,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA Nº 09/2025",
@@ -395,7 +501,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Normas: Seleção de Propostas para o Programa de Incentivo Acadêmico: Bolsa Mérito e Prêmio Estudante Destaque Universitário",
@@ -406,7 +515,10 @@
       "status": "encerrado",
       "tipo": "oportunidade",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "Edital FAPEMA Nº  08/2025",
@@ -417,7 +529,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "EDITAL FAPEMA/EMAP Nº 07/2025",
@@ -428,7 +543,10 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     },
     {
       "titulo": "DIRETRIZES DA CHAMADA PÚBLICA DE COOPERAÇÃO INTERNACIONAL",
@@ -439,7 +557,10 @@
       "status": "indeterminado",
       "tipo": "oportunidade",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-09-08T21:01:33-03:00"
+      "ultima_verificacao_em": "2026-09-08T21:31:18-03:00",
+      "notificado": false,
+      "notificado_em": null,
+      "pendente_notificacao": false
     }
   ]
 }
