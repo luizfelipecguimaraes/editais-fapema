@@ -1,4 +1,8 @@
+
 import json
+import os
+import tempfile
+
 from datetime import datetime
 from json import JSONDecodeError
 from pathlib import Path
@@ -13,16 +17,14 @@ DATA_FILE = ROOT_DIR / "data" / "editais.json"
 
 def agora_iso() -> str:
     """Retorna data/hora atual no fuso de Fortaleza."""
-    return datetime.now(TIMEZONE).isoformat(timespec="seconds")
+    return datetime.now(TIMEZONE).isoformat(
+        timespec="seconds"
+    )
 
 
 def carregar_estado() -> dict:
-    """
-    Carrega o estado persistido.
+    """Carrega o estado persistido dos editais."""
 
-    Caso o arquivo não exista, esteja vazio ou contenha
-    um JSON inválido, retorna um estado vazio.
-    """
     estado_vazio = {
         "ultima_execucao_em": None,
         "telegram_inicializado": False,
@@ -37,48 +39,85 @@ def carregar_estado() -> dict:
             "r",
             encoding="utf-8",
         ) as arquivo:
-            return json.load(arquivo)
+            estado = json.load(arquivo)
 
-    except (JSONDecodeError, OSError):
-        return estado_vazio
+    except (JSONDecodeError, OSError) as erro:
+        raise RuntimeError(
+            f"Erro ao carregar o estado em {DATA_FILE}. "
+            "Execução interrompida para preservar os dados."
+        ) from erro
+
+    if (
+        not isinstance(estado, dict)
+        or not isinstance(estado.get("editais"), list)
+    ):
+        raise ValueError(
+            "Estrutura inválida no arquivo editais.json."
+        )
+
+    return estado
 
 
 def salvar_estado(estado: dict) -> None:
-    """Salva o estado no arquivo JSON."""
+    """Salva o estado usando escrita atômica."""
+
     DATA_FILE.parent.mkdir(
         parents=True,
         exist_ok=True,
     )
 
-    with DATA_FILE.open(
-        "w",
-        encoding="utf-8",
-    ) as arquivo:
-        json.dump(
-            estado,
-            arquivo,
-            ensure_ascii=False,
-            indent=2,
+    caminho_temporario = None
+
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=DATA_FILE.parent,
+            prefix="editais_",
+            suffix=".tmp",
+            delete=False,
+        ) as arquivo:
+
+            caminho_temporario = Path(
+                arquivo.name
+            )
+
+            json.dump(
+                estado,
+                arquivo,
+                ensure_ascii=False,
+                indent=2,
+            )
+
+            arquivo.write("\n")
+            arquivo.flush()
+            os.fsync(arquivo.fileno())
+
+        # Substitui o arquivo original somente
+        # após a gravação completa.
+        os.replace(
+            caminho_temporario,
+            DATA_FILE,
         )
 
-        arquivo.write("\n")
+    finally:
+        if (
+            caminho_temporario is not None
+            and caminho_temporario.exists()
+        ):
+            caminho_temporario.unlink()
 
 
 def atualizar_estado(
     estado: dict,
     editais_atuais: list[dict],
 ) -> tuple[dict, list[dict]]:
-    """
-    Atualiza o estado com os itens coletados.
+    """Atualiza os editais sem remover registros antigos."""
 
-    Retorna:
-    - estado atualizado;
-    - lista de itens novos detectados.
-    """
     momento = agora_iso()
 
     editais_salvos = {
-        edital["url"]: edital
+        edital["url"]: edital.copy()
         for edital in estado.get("editais", [])
     }
 
@@ -90,8 +129,8 @@ def atualizar_estado(
         if url in editais_salvos:
             registro = editais_salvos[url]
 
-            # Atualiza dados que podem mudar com o tempo.
             registro.update(edital_atual)
+
             registro["ultima_verificacao_em"] = momento
 
         else:
@@ -104,9 +143,10 @@ def atualizar_estado(
             editais_salvos[url] = registro
             novos.append(registro)
 
-    editais = list(editais_salvos.values())
+    editais = list(
+        editais_salvos.values()
+    )
 
-    # Mantém o JSON previsível e coloca publicações mais novas primeiro.
     editais.sort(
         key=lambda edital: (
             edital.get("publicado_em") or "",
@@ -116,12 +156,12 @@ def atualizar_estado(
     )
 
     novo_estado = {
-    "ultima_execucao_em": momento,
-    "telegram_inicializado": estado.get(
-        "telegram_inicializado",
-        False,
-    ),
-    "editais": editais,
+        "ultima_execucao_em": momento,
+        "telegram_inicializado": estado.get(
+            "telegram_inicializado",
+            False,
+        ),
+        "editais": editais,
     }
 
     return novo_estado, novos

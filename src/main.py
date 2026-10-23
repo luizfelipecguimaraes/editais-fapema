@@ -1,5 +1,7 @@
 from time import sleep
 
+import requests
+
 from fapema.parser import parsear_edital
 from fapema.scraper import listar_editais
 from fapema.validator import validar_editais
@@ -16,6 +18,13 @@ from notifications.service import (
 )
 from notifications.telegram import enviar_mensagem
 
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s"
+)
+
 
 TIPOS_MONITORADOS = (
     "edital",
@@ -25,6 +34,7 @@ TIPOS_MONITORADOS = (
 
 def coletar_editais() -> list[dict]:
     """Coleta e processa os editais monitorados."""
+
     itens = validar_editais(
         listar_editais()
     )
@@ -55,6 +65,12 @@ def coletar_editais() -> list[dict]:
 
             editais.append(edital)
 
+        except requests.exceptions.RequestException as erro:
+            print(
+                f"Erro de conexão ao processar "
+                f"{item['url']}: {erro}"
+            )
+
         except Exception as erro:
             print(
                 f"Erro ao processar "
@@ -74,7 +90,68 @@ def main():
 
     estado = carregar_estado()
 
-    editais_atuais = coletar_editais()
+    # Proteção contra indisponibilidade da FAPEMA.
+    # Não altera o estado se a coleta principal falhar.
+    try:
+        editais_atuais = coletar_editais()
+
+    except requests.exceptions.RequestException as erro:
+        print("\n" + "=" * 70)
+        print("ERRO DE CONEXÃO COM A FAPEMA\n")
+
+        print(f"Detalhes: {erro}")
+
+        print(
+            "\nNão foi possível concluir a coleta."
+        )
+
+        print(
+            "O estado anterior será preservado."
+        )
+
+        print(
+            "Uma nova tentativa ocorrerá "
+            "na próxima execução agendada."
+        )
+
+        print("=" * 70)
+
+        raise SystemExit(1) from erro
+
+    # Protege contra falhas inesperadas na coleta.
+    except Exception as erro:
+        print("\n" + "=" * 70)
+        print("ERRO DURANTE A COLETA\n")
+
+        print(f"Detalhes: {erro}")
+
+        print(
+            "Monitoramento interrompido "
+            "sem modificar o estado."
+        )
+
+        print("=" * 70)
+
+        raise
+
+    # Evita atualizar o banco com uma coleta vazia.
+    # Atenção: pressupõe que uma coleta válida
+    # deva retornar pelo menos um edital.
+    if not editais_atuais:
+        print("\n" + "=" * 70)
+        print("AVISO: NENHUM EDITAL PROCESSADO\n")
+
+        print(
+            "A coleta retornou uma lista vazia."
+        )
+
+        print(
+            "O estado anterior será preservado."
+        )
+
+        print("=" * 70)
+
+        raise SystemExit(1)
 
     novo_estado, novos = atualizar_estado(
         estado,
