@@ -1,7 +1,21 @@
 {
-  "ultima_execucao_em": "2026-11-09T20:48:46-03:00",
+  "ultima_execucao_em": "2026-11-10T18:20:35-03:00",
   "telegram_inicializado": true,
   "editais": [
+    {
+      "titulo": "DIRETRIZES DA CHAMADA PÚBLICA DE COOPERAÇÃO INTERNACIONAL – 2026",
+      "url": "https://www.fapema.br/diretrizes-da-chamada-publica-de-cooperacao-internacional-2/",
+      "publicado_em": "2026-11-10",
+      "prazo_final": null,
+      "prazo_hora": null,
+      "status": "indeterminado",
+      "tipo": "oportunidade",
+      "detectado_em": "2026-11-10T18:20:35-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
+      "notificado": true,
+      "notificado_em": "2026-11-10T18:20:37-03:00",
+      "pendente_notificacao": false
+    },
     {
       "titulo": "Edital FAPEMA n° 22/2026",
       "url": "https://www.fapema.br/edital-fapema-n-22-2026/",
@@ -11,7 +25,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": true,
       "notificado_em": "2026-09-08T21:26:29-03:00",
       "pendente_notificacao": false
@@ -25,7 +39,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -39,7 +53,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": true,
       "notificado_em": "2026-09-08T21:26:31-03:00",
       "pendente_notificacao": false
@@ -53,7 +67,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -67,7 +81,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -81,7 +95,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -95,7 +109,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -109,7 +123,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -123,7 +137,7 @@
       "status": "encerrado",
       "tipo": "oportunidade",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": true,
       "notificado_em": "2026-09-08T21:26:32-03:00",
       "pendente_notificacao": false
@@ -137,7 +151,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -151,7 +165,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -165,7 +179,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -179,7 +193,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -193,7 +207,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -207,7 +221,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -221,7 +235,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -235,7 +249,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -249,7 +263,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -263,7 +277,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -277,7 +291,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -291,7 +305,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -305,7 +319,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -319,7 +333,7 @@
       "status": "indeterminado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -333,7 +347,7 @@
       "status": "indeterminado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -347,7 +361,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -361,7 +375,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -375,7 +389,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -389,7 +403,7 @@
       "status": "indeterminado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -403,7 +417,7 @@
       "status": "indeterminado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -417,7 +431,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -431,7 +445,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -445,7 +459,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -459,7 +473,7 @@
       "status": "indeterminado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -473,7 +487,7 @@
       "status": "encerrado",
       "tipo": "oportunidade",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -487,7 +501,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -501,7 +515,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -515,7 +529,7 @@
       "status": "encerrado",
       "tipo": "oportunidade",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -529,7 +543,7 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
@@ -543,13 +557,13 @@
       "status": "encerrado",
       "tipo": "edital",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
     },
     {
-      "titulo": "DIRETRIZES DA CHAMADA PÚBLICA DE COOPERAÇÃO INTERNACIONAL",
+      "titulo": "DIRETRIZES DA CHAMADA PÚBLICA DE COOPERAÇÃO INTERNACIONAL – 2025",
       "url": "https://www.fapema.br/diretrizes-da-chamada-publica-de-cooperacao-internacional/",
       "publicado_em": "2025-03-06",
       "prazo_final": null,
@@ -557,7 +571,7 @@
       "status": "indeterminado",
       "tipo": "oportunidade",
       "detectado_em": "2026-09-08T20:58:39-03:00",
-      "ultima_verificacao_em": "2026-11-09T20:48:46-03:00",
+      "ultima_verificacao_em": "2026-11-10T18:20:35-03:00",
       "notificado": false,
       "notificado_em": null,
       "pendente_notificacao": false
